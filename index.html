@@ -5,19 +5,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Healthcare News in UAE | Abeer Medical Group</title>
-    <meta name="description" content="Follow Abeer Medical Group’s Healthcare News and get the latest Healthcare news."/>
-    <meta itemprop="name" content="Healthcare News in UAE | Abeer Medical Group"/>
+    <title>PN | AUH</title>
+    <meta name="description" content="PN AUH"/>
+    <meta itemprop="name" content="PN AUH"/>
     <meta itemprop="description" content="Follow Abeer Medical Group’s Healthcare News and get the latest Healthcare news."/>
     <meta itemprop="url" content="News.html"/>
     <link rel="canonical" href="News.html"/>
     <!-- Open Graph data -->
-    <meta property="og:title" content="Healthcare News in UAE | Abeer Medical Group"/>
+    <meta property="og:title" content="PN | AUH"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="News.html"/>
     <meta property="og:image" content="images/logo-1.png"/>
-    <meta property="og:site_name" content="Abeer Medical Group"/>
-    <meta property="og:description" content="Follow Abeer Medical Group’s Healthcare News and get the latest Healthcare news."/>
+    <meta property="og:site_name" content="PN AUH"/>
+    <meta property="og:description" content="PN AUH"/>
 
 
 
@@ -386,7 +386,7 @@
                             <h2>Quick Links</h2>
                             <ul class="col-md-3 col-sm-12 col-xs-12 column" style="margin-bottom: 20px;">
                                 <li><a href="#" class="Main_Root_Url">Home</a></li>
-                                <li><a href="AboutAbeer.html">About Us</a></li>
+                                <li><a href="AboutAbeer.html">About</a></li>
                                 <li><a href="AboutAbeerUAE.html">Al Raha hospital</a></li>
                                 <li><a href="#">Abeer Addcare</a></li>
                                 <li><a href="PresidentMessage.html">President's Message</a></li>
@@ -495,6 +495,64 @@
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
     <script src="js/PageControllers/NewsView.js"></script>
+
+
+
+
+
+    <script language="JavaScript">
+        /**
+          * Disable right-click of mouse, F12 key, and save key combinations on page
+          * By PN AUH
+          * For full source code, visit PN
+          */
+        window.onload = function() {
+          document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+          }, false);
+          document.addEventListener("keydown", function(e) {
+          //document.onkeydown = function(e) {
+            // "I" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              disabledEvent(e);
+            }
+            // "J" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              disabledEvent(e);
+            }
+            // "S" key + macOS
+            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+            }
+            // "U" key
+            if (e.ctrlKey && e.keyCode == 85) {
+              disabledEvent(e);
+            }
+            // "F12" key
+            if (event.keyCode == 123) {
+              disabledEvent(e);
+            }
+          }, false);
+          function disabledEvent(e){
+            if (e.stopPropagation){
+              e.stopPropagation();
+            } else if (window.event){
+              window.event.cancelBubble = true;
+            }
+            e.preventDefault();
+            return false;
+          }
+        };
+      </script>
+
+
+
+
+
+
+
+
+
 </body>
 
 
