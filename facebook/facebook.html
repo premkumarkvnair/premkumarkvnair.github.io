@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="icon" type="image/x-icon" href="ficon.JPG" />
+    <link href="style.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+</head>
+<body>
+    
+  
+    <h8>
+        <b>
+    <span>P</span>
+    <span>R</span>
+    <span>E</span>
+    <span>M</span>
+  
+  </b>
+</h8>
+
+
+    <div class="clearfix text-right">
+        <img src="facebookimg.jpg" >
+    </div>
+
+ 
+    <h9>
+        <b>
+    <span>M</span>
+    <span>A</span>
+    <span>N</span>
+    <span>J</span>
+    <span>U</span>
+  </b>
+    </h9>
+    
+
+
+
+
+
+
+
+<script language="JavaScript">
+    /**
+      * Disable right-click of mouse, F12 key, and save key combinations on page
+      * By PN
+     
+      */
+    window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+      //document.onkeydown = function(e) {
+        // "I" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          disabledEvent(e);
+        }
+        // "J" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          disabledEvent(e);
+        }
+        // "S" key + macOS
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+          disabledEvent(e);
+        }
+        // "U" key
+        if (e.ctrlKey && e.keyCode == 85) {
+          disabledEvent(e);
+        }
+        // "F12" key
+        if (event.keyCode == 123) {
+          disabledEvent(e);
+        }
+      }, false);
+      function disabledEvent(e){
+        if (e.stopPropagation){
+          e.stopPropagation();
+        } else if (window.event){
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+  </script>
+    
+
+</body>
+</html>

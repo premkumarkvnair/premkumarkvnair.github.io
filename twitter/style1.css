@@ -1,0 +1,115 @@
+
+
+   
+  h9
+  
+  {
+  
+  position: absolute;
+  top: 37%;
+  left: 87%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  text-shadow: 0 5px 15px rgba(red, green, blue, alpha);
+  text-transform: uppercase;
+  border: 10px solid #000;
+  border-top: none;
+  background-color: yellowgreen;
+  
+  }
+  
+  h9 span
+  
+  {
+  
+      position: relative;
+      display: inline-block;
+  
+  
+  }
+  
+  h9 span:nth-child(1)
+  {
+  color: rgb(9, 43, 153);
+  
+      
+      animation: animate 3s alternate infinite;
+  
+  
+  }
+  h9 span:nth-child(2)
+  {
+  color: rgb(207, 139, 11);
+  
+      
+      animation: animate 3s alternate infinite;
+  
+  
+  }
+  h9 span:nth-child(3)
+  {
+  color: rgb(116, 11, 143);
+  
+      
+      animation: animate 3s alternate infinite;
+  
+  }
+  
+  h9 span:nth-child(4)
+  {
+  color: rgb(126, 10, 48);
+  
+      
+      animation: animate 3s alternate infinite;
+  
+  
+  }
+
+  h9 span:nth-child(5)
+  {
+  color: rgb(48, 4, 99);
+  
+      
+      animation: animate 3s alternate infinite;
+  
+  
+  }
+  @keyframes animate
+
+  
+  {
+  
+    0%
+    {
+transform:translateY(0px) rotate(0deg);
+
+    }
+
+    40%
+{
+    transform: translateY( 100px) rotate(0deg);
+
+}
+50%
+{
+    transform: translateY(-180px) rotate(180deg);
+
+}
+60%
+
+{
+    transform: translateY(0px) rotate(360deg);
+
+}
+
+
+100%
+
+{
+    transform: translateY(0px) rotate(360deg);
+
+}
+
