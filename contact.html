@@ -2,6 +2,7 @@
 <html ng-app="NewsViewModule">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <title>PN | AUH</title>
     <meta name="description" content="PN AUH"/>
@@ -200,7 +201,91 @@
 
     <a href="https://premmanju.com/" target="_blank" class="Main_Root_Url"> <img src="zzimage/Prem Photo.JPG"  alt="PN AUH"></a>
                   
-   
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+   <!--Form Column-->
+                    
+<div class="column form-column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h2 class="language" lang="en">Send Message</h2>
+    <h2 class="language" lang="ar"> ارسل رسالة</h2>
+    <!--COntact Form-->
+    <form id="submit-form" action="">
+
+
+
+                    <!--Form Group-->
+                   
+                    <div id="DivErrorMsg" class="Form_ErrorMessge" style="display: none"></div>
+
+                            <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <!--Form Group-->
+                                        <div class="form-portlet">
+                                        <div class="form-group col-md-6 col-xs-12">
+                        
+                        <div class="field-label language" lang="en">Name<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar">الإسم<span class="required">*</span></div>
+                        <div class="fields">
+                            <input name="txtName" type="text" id="txtName" placeholder="Enter Your Name" />
+                        </div>
+                    </div>
+                    <!--Form Group-->
+                    <div class="form-group col-md-6 col-xs-12">
+                        <div class="field-label language" lang="en">Email<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar"> البريد الإلكتروني<span class="required">*</span></div>
+                        <div class="fields">
+                        <input name="CNT_txtEmail" type="text" id="CNT_txtEmail" name="email" value="" placeholder="Your Email" />
+                            </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <div class="field-label language" lang="en">Contact Number <span class="required">*</span></div>
+                            <div class="field-label language" lang="ar"> رقم التواصل<span class="required">*</span></div>
+                            <div class="fields">
+                                <input name="txtContactNumber" type="text" id="txtContactNumber" placeholder="Your Contact Number" />
+                            </div>
+                        </div>
+                    <!--Form Group-->
+                    <div class="form-group col-md-12 col-xs-12">
+                        <div class="field-label language" lang="en">Message<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar"> الرسالة<span class="required">*</span></div>
+                        <div class="fields">
+                        <textarea name="txtMessage" id="txtMessage" style="height:160px" placeholder="Message"></textarea>
+                            </div>
+                    </div>
+
+                    <!--Form Group-->
+                    <div class="form-group col-md-12 col-xs-12">
+                        <div class="text-right">
+                            <input type="submit" name="btnSubmit" value="Send" onclick="return validatePage();" id="btnSubmit" class="theme-btn btn-style-two" />
+                        </div>
+                    </div>                                            
+                    </div>
+                </div>
+        </div>
+
+
+        <script>
+            $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+            url:"https://script.google.com/macros/s/AKfycby3-YGOCyljWq_e5xndg8OOpg55YJqX9K6w9DbM/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+            },
+            error:function (err){
+            alert("Something Error")
+            
+            }
+            })
+            })
+            </script>
+        <!--COntact Form-->
 
 
 <!--Main Footer-->
